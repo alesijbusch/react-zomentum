@@ -1,0 +1,72 @@
+@import "src/ui/variables.scss";
+
+.header {
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0;
+    align-items: center;
+    @media (max-width: 568px) {
+      flex-direction: column;
+      margin: 31px 0 52px;
+    }
+  }
+  &__logo {
+    @media (max-width: 768px) {
+      text-align: center;
+      flex-basis: 100%;
+      margin-bottom: 10px;
+    }
+    @media (max-width: 568px) {
+      margin-bottom: 0;
+    }
+  }
+  &__nav {
+    margin-left: auto;
+    @media (max-width: 768px) {
+      margin-left: 0;
+    }
+    @media (max-width: 568px) {
+      display: flex;
+      align-items: start;
+      flex-direction: column;
+      margin-top: 53px;
+    }
+  }
+  &__link {
+    margin-right: 30px;
+    color: $content;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 16px;
+    @media (max-width: 568px) {
+      margin-bottom: 14px;
+      margin-right: 0;
+      text-align: center;
+    }
+    &.header__link--active {
+      font-weight: 700;
+    }
+  }
+
+  &__btn {
+    font-size: 16px;
+    display: inline-block;
+    color: #2f70fe;
+    line-height: 18px;
+    border: 1px solid #2f70fe;
+    background-color: #fff;
+    padding: 12px 23px;
+    cursor: pointer;
+    @media (max-width: 991px) {
+      padding: 10px 20px;
+      font-size: 15px;
+    }
+    @media (max-width: 568px) {
+      margin-top: 42px;
+      padding: 12px 23px;
+      font-size: 16px;
+    }
+  }
+}
